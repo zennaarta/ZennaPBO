@@ -1,0 +1,16 @@
+DATABASE : Laundry
+
+CREATE TABLE IF NOT EXISTS outlet(
+	id_outlet int,
+	nama varchar(255),
+	alamat text,
+	no_telepon varchar(16),
+	PRIMARY KEY(id_outlet)
+)
+
+INSERT INTO outlet (id_outlet, nama, alamat, no_telepon)
+VALUES
+    (1, 'Outlet A', 'Alamat Outlet A', '1234567890'),
+    (2, 'Outlet B', 'Alamat Outlet B', '0987654321'),
+    (3, 'Outlet C', 'Alamat Outlet C', '9876543210');
+
